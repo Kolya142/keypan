@@ -1,0 +1,9 @@
+{
+    "k": "/usr/bin/kitty",
+    "c": "code",
+    "m": "mousepad",
+    "p": "~/fix-wifi.sh",
+    "q": "mousepad binds.json",
+    "o": "cd /home/sony/window_snake/; ./ws",
+    "keyboard": "SEM USB Keyboard"
+}

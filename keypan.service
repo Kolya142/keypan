@@ -1,0 +1,18 @@
+[Unit]
+Description=This Deamon Proccess uses second keyboard
+After=basic.target
+
+[Service]
+Environment="PATH=/home/sony/.cabal/bin:/home/sony/.ghcup/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/sony/.dotnet/tools:/var/lib/snapd/snap/bin:/home/sony/.go/bin:/home/sony/go/bin:/home/sony/.go/bin:/home/sony/go/bin:/home/sony/.go/bin:/home/sony/go/bin:/home/sony/.go/bin:/home/sony/go/bin"
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/run/user/1000/xauth_IjPDGU"
+Type=simple
+User=sony
+Group=sony
+WorkingDirectory=/home/sony/keypan
+ExecStart=/home/sony/keypan/start.sh
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
